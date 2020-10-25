@@ -39,14 +39,22 @@ h3 {
 		color: $secondary;
 		text-transform: uppercase;
 		padding: 1rem 2rem;
+
 		@include respond(sm) {
 			padding: 0;
 			margin-left: 2rem;
+		}
+		@include respond(md) {
+			margin-left: 4rem;
 		}
 
 		&:hover {
 			color: $white;
 			background-color: $primary-darker;
+
+			@include respond(sm) {
+				background-color: $primary;
+			}
 		}
 	}
 }

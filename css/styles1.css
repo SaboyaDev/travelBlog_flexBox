@@ -68,9 +68,15 @@ h3 {
       .menu a {
         padding: 0;
         margin-left: 2rem; } }
+    @media (min-width: 768px) {
+      .menu a {
+        margin-left: 4rem; } }
     .menu a:hover {
       color: #ffffff;
       background-color: #080f29; }
+      @media (min-width: 576px) {
+        .menu a:hover {
+          background-color: #111f51; } }
 
 .button {
   background-color: var(--primary);
