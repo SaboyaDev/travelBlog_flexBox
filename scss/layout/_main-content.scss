@@ -1,0 +1,29 @@
+.main-content-container {
+	position: relative;
+	display: block;
+	background-color: var(--gray);
+	min-height: 92vh;
+	display: flex;
+	align-items: center;
+	padding: 10rem 0;
+}
+
+@media screen and (min-width: 480px) {
+	.entry {
+		flex: 0 1 calc(50% - 1rem);
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.entry {
+		flex: 0 1 calc(33% - 1rem);
+	}
+}
+
+@media screen and (min-width: 480px) {
+	.main-content {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+}

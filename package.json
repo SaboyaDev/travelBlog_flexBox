@@ -1,0 +1,22 @@
+{
+  "name": "travel-blog-flexbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch-sass": "node-sass scss/main.scss css/styles1.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaboyaDev/travelBlog_flexBox.git"
+  },
+  "author": "Jose L Saboya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SaboyaDev/travelBlog_flexBox/issues"
+  },
+  "homepage": "https://github.com/SaboyaDev/travelBlog_flexBox#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

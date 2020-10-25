@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html,
+body {
+	scroll-behavior: smooth;
+}
+
+html {
+	/*
+    This allows the user to zoom in properly
+    with out changing the default 16px set by the browser.
+    This way, we are able to have the font size at 10px.
+    If we divide, 10/16 = 62.5%
+  */
+	font-size: 62.5%;
+}
+
+body {
+	background-color: var(--gray);
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+h2 {
+	flex: 0 1 100%;
+}
+
+img {
+	max-width: 100%;
+}

@@ -1,0 +1,52 @@
+// Fonts Import
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap');
+@font-face {
+	font-family: 'Glacial Indifference';
+	src: url('../fonts/GlacialIndifference-Regular.otf');
+}
+
+body {
+	font-family: 'Assistant', sans-serif;
+}
+
+h1 {
+	font-family: 'Glacial Indifference';
+	text-transform: capitalize;
+	color: var(--white);
+	font-size: clamp(2.5rem, 7vw, 5rem);
+	line-height: 1.4;
+}
+h2 {
+	text-align: center;
+	font-size: 1.6rem;
+}
+h3 {
+	margin: 0;
+	font-weight: 700;
+}
+
+// Navbar Fonts
+.nav-toggle-label {
+	font-size: 2.4rem;
+}
+
+// Nav Menu
+.menu {
+	background-color: $primary;
+
+	& a {
+		font-size: 1.4rem;
+		color: $secondary;
+		text-transform: uppercase;
+		padding: 1rem 2rem;
+		@include respond(sm) {
+			padding: 0;
+			margin-left: 2rem;
+		}
+
+		&:hover {
+			color: $white;
+			background-color: $primary-darker;
+		}
+	}
+}

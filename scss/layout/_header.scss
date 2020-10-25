@@ -1,0 +1,31 @@
+.header {
+	z-index: -1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.hero {
+	background-color: #000000;
+	height: 100vh;
+	position: relative;
+	transform: translateZ(-1px) scale(2);
+}
+.hero::before {
+	content: '';
+	background-image: url('../img/hero.jpg');
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	opacity: 0.5;
+}
+
+/* Header Text */
+.header-text {
+	position: relative;
+	padding: 0 2rem;
+}

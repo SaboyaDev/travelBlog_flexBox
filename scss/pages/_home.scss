@@ -1,0 +1,8 @@
+// Main Content Sections
+.main-wrapper {
+	perspective: 1px;
+	transform-style: preserve-3d;
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}

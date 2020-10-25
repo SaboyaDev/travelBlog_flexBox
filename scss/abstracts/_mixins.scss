@@ -1,0 +1,38 @@
+// @mixin clearfix {
+//   &::after {
+//     content: '';
+//     display: table;
+//     clear: both;
+//   }
+// }
+
+// 1rem = 16
+
+@mixin respond($breakpoint) {
+	// Small devices (landscape phones, 576px and up)
+	@if $breakpoint == sm {
+		@media (min-width: 576px) {
+			@content;
+		}
+	}
+	// Medium devices (tablets, 768px and up)
+	@if $breakpoint == md {
+		@media (min-width: 768px) {
+			@content;
+		}
+	}
+
+	// Large devices (desktops, 992px and up)
+	@if $breakpoint == lg {
+		@media (min-width: 992px) {
+			@content;
+		}
+	}
+
+	// Extra large devices (large desktops, 1280px and up)
+	@if $breakpoint == xl {
+		@media (min-width: 1200px) {
+			@content;
+		}
+	}
+}

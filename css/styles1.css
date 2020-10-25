@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html,
+body {
+  scroll-behavior: smooth; }
+
+html {
+  /*
+    This allows the user to zoom in properly
+    with out changing the default 16px set by the browser.
+    This way, we are able to have the font size at 10px.
+    If we divide, 10/16 = 62.5%
+  */
+  font-size: 62.5%; }
+
+body {
+  background-color: var(--gray);
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+h2 {
+  flex: 0 1 100%; }
+
+img {
+  max-width: 100%; }
+
+@font-face {
+  font-family: 'Glacial Indifference';
+  src: url("../fonts/GlacialIndifference-Regular.otf"); }
+
+body {
+  font-family: 'Assistant', sans-serif; }
+
+h1 {
+  font-family: 'Glacial Indifference';
+  text-transform: capitalize;
+  color: var(--white);
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  line-height: 1.4; }
+
+h2 {
+  text-align: center;
+  font-size: 1.6rem; }
+
+h3 {
+  margin: 0;
+  font-weight: 700; }
+
+.nav-toggle-label {
+  font-size: 2.4rem; }
+
+.menu {
+  background-color: #111f51; }
+  .menu a {
+    font-size: 1.4rem;
+    color: #17abbe;
+    text-transform: uppercase;
+    padding: 1rem 2rem; }
+    @media (min-width: 576px) {
+      .menu a {
+        padding: 0;
+        margin-left: 2rem; } }
+    .menu a:hover {
+      color: #ffffff;
+      background-color: #080f29; }
+
+.button {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 0.6rem 2rem;
+  margin-top: 1rem;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+.content {
+  background-color: var(--white);
+  margin-bottom: 1rem;
+  text-transform: uppercase; }
+
+.content {
+  padding: 1rem;
+  text-align: center; }
+
+.content h3 {
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.4rem; }
+
+.content span {
+  color: var(--secondary); }
+
+.navbar {
+  background-color: #111f51;
+  position: absolute;
+  width: 100vw;
+  top: 0;
+  padding: 0.5rem 2rem; }
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .header-container .logo {
+    display: flex;
+    align-items: center; }
+  .header-container .nav-toggle-label {
+    cursor: pointer;
+    color: #17abbe; }
+    .header-container .nav-toggle-label:hover {
+      color: #ffffff; }
+  .header-container .menu {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out; }
+    .header-container .menu nav {
+      display: flex;
+      flex-direction: column; }
+    .header-container .menu a {
+      opacity: 0;
+      transition: opacity 150ms ease-in-out; }
+  .header-container .nav-toggle {
+    display: none; }
+    .header-container .nav-toggle:checked + .menu {
+      transform: scale(1, 1); }
+      .header-container .nav-toggle:checked + .menu a {
+        opacity: 1;
+        transition: opacity 250ms ease-in-out 250ms; }
+
+@media (min-width: 576px) {
+  .nav-toggle-label {
+    display: none; }
+  .header-container .menu {
+    all: unset; }
+    .header-container .menu nav {
+      flex-direction: row;
+      justify-content: flex-end; }
+    .header-container .menu a {
+      opacity: 1; } }
+
+footer p {
+  margin: 0; }
+
+footer {
+  padding: 3rem;
+  background-color: var(--primary);
+  color: white;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.header {
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.hero {
+  background-color: #000000;
+  height: 100vh;
+  position: relative;
+  transform: translateZ(-1px) scale(2); }
+
+.hero::before {
+  content: '';
+  background-image: url("../img/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5; }
+
+/* Header Text */
+.header-text {
+  position: relative;
+  padding: 0 2rem; }
+
+.main-content-container {
+  position: relative;
+  display: block;
+  background-color: var(--gray);
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+  padding: 10rem 0; }
+
+@media screen and (min-width: 480px) {
+  .entry {
+    flex: 0 1 calc(50% - 1rem); } }
+
+@media screen and (min-width: 768px) {
+  .entry {
+    flex: 0 1 calc(33% - 1rem); } }
+
+@media screen and (min-width: 480px) {
+  .main-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; } }
+
+.main-wrapper {
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll; }
