@@ -77,6 +77,8 @@ h3 {
       @media (min-width: 576px) {
         .menu a:hover {
           background-color: #111f51; } }
+    .menu a:visited {
+      color: #ffffff; }
 
 .button {
   background-color: var(--primary);
@@ -121,8 +123,6 @@ h3 {
   .header-container .nav-toggle-label {
     cursor: pointer;
     color: #17abbe; }
-    .header-container .nav-toggle-label:hover {
-      color: #ffffff; }
   .header-container .menu {
     width: 100%;
     position: absolute;
