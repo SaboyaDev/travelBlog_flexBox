@@ -77,8 +77,6 @@ h3 {
       @media (min-width: 576px) {
         .menu a:hover {
           background-color: #111f51; } }
-    .menu a:visited {
-      color: #ffffff; }
 
 .button {
   background-color: var(--primary);
