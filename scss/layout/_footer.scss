@@ -3,10 +3,7 @@ footer p {
 }
 footer {
 	padding: 3rem;
-	background-color: var(--primary);
-	color: white;
-	font-size: 1.3rem;
-
+	background-color: $primary;
 	display: flex;
 	justify-content: center;
 	align-items: center;

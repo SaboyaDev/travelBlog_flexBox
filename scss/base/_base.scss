@@ -30,10 +30,22 @@ a {
 	text-decoration: none;
 }
 
-h2 {
-	flex: 0 1 100%;
+a,
+p {
+	font-size: $default-font-size;
 }
 
-img {
-	max-width: 100%;
+h1,
+h2 {
+	font-family: adelle, serif;
+	font-weight: 900;
+	font-style: normal;
+}
+
+h2 {
+	font-size: $mid-font-size;
+}
+
+h3 {
+	font-size: $mid-small-size;
 }
